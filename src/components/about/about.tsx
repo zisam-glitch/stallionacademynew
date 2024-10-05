@@ -1,14 +1,14 @@
 export default function Hero() {
   return (
     <section className=" bg-white py-[100px]   mt-[850px]">
-      <div className="container   mx-auto px-8 grid grid-cols-2">
+      <div className="container text-black  mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2">
         <div>
-          <h2 className="  font-light text-7xl capitalize">
+          <h2 className="  font-light md:text-7xl text-3xl md:pb-0 pb-10 capitalize">
             Extraordinary people. Extraordinary service.
           </h2>
         </div>
         <div>
-          <p className="pb-7 text-xl pr-[80px]">
+          <p className="pb-7  text-xl pr-0 md:pr-[80px]">
             At Stallion Dental Academy, we are dedicated to elevating dental
             professionals through world-class education and hands-on training.
             Our mission is to provide comprehensive courses that empower

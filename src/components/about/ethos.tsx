@@ -1,33 +1,14 @@
 export default function Service() {
   return (
     <section className=" bg-white py-[100px]">
-      <div className="container   mx-auto px-8">
+      <div className="container text-black  mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center pb-14">
           <h2 className="font-mono font-light text-xl capitalize">
             Our Ethos{" "}
           </h2>
-          {/* <a
-              href="#"
-              className="bg-[#171721] w-[300px] flex justify-center    font-mono text-white py-[15px] px-[18px] rounded-[50px] hover:underline"
-            >
-              <div className="flex gap-4 items-center justify-center">
-                <p>View Our Course Programme </p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="13"
-                  height="9"
-                  viewBox="0 0 13 9"
-                  fill="none"
-                >
-                  <path
-                    d="M12.7279 4.5L5.22792 0.169873V8.83013L12.7279 4.5ZM0 5.25H5.97792V3.75L0 3.75L0 5.25Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-            </a> */}
+       
         </div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="px-6 py-7 rounded-xl bg-[#f4f4f4]">
            
             <h3 className="text-[22px] leading-tight pt-4 pb-3">

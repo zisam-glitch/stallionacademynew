@@ -18,7 +18,7 @@ export default function Hero() {
         </video>
 
         {/* Content */}
-        <div className="relative mx-auto container  flex flex-col items-start justify-center  h-full text-white pt-[150px] px-8">
+        <div className="relative mx-auto container  flex flex-col items-start justify-center  h-full text-white pt-[150px] px-4 md:px-8">
           <div className="md:w-2/4 w-full">
             <h1 className="md:text-[83px] text-[43px] font-bold leading-none mb-4">
               Stallion Dental Academy

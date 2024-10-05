@@ -8,8 +8,8 @@ export default function Hero() {
           </h2>
         </div>
         <div>
-          <h1 className="text-5xl  text-black ">Excellence in Dental Training</h1>
-          <p className="py-7  text-black text-lg pr-0 md:pr-[80px]">
+          <h1 className="md:text-5xl text-4xl text-black ">Excellence in Dental Training</h1>
+          <p className="py-7  text-black text-lg  pr-0 md:pr-[80px]">
             Stallion Academy: Elevating dental professionals through
             comprehensive courses and continuous learning. Unlock your potential
             for success in dentistry. Elevating dental professionals through

@@ -1,7 +1,7 @@
 export default function Service() {
   return (
     <section className=" bg-white py-[100px]">
-      <div className="container  mx-auto px-4 md:px-8">
+      <div className="container text-black mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center pb-14">
           <h2 className="font-mono font-light text-xl capitalize">
             What You Get

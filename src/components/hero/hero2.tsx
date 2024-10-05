@@ -19,9 +19,9 @@ export default function Hero() {
         {/* <img  className="absolute top-0 left-0 w-full h-full object-cover" src="https://res.cloudinary.com/db1i46uiv/image/upload/v1727900754/Untitled_design_5_x6d6th.png" alt="" /> */}
 
         {/* Content */}
-        <div className="relative mx-auto container  flex flex-col items-start justify-center  h-full text-white pt-[400px] px-8">
-          <div className="w-2/4">
-            <h1 className="text-[83px] font-bold leading-none mb-4">
+        <div className="relative mx-auto container  flex flex-col items-start justify-center  h-full text-white pt-[400px] px-4 md:px-8">
+          <div className="md:w-2/4 w-full">
+            <h1 className="md:text-[83px] text-[43px] font-bold leading-none mb-4">
               About Us
             </h1>
            
