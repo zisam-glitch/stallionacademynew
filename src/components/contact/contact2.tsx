@@ -13,10 +13,15 @@ export default function Service() {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, files } = e.target;
+    const { name, value, type } = e.target;
 
-    // Check if the target is an input element and has files
-    const newValue = (e.target as HTMLInputElement).files ? (files as FileList)[0] : value;
+    // Handle file input separately
+    let newValue: string | File | null = value;
+
+    if (type === "file") {
+      const files = (e.target as HTMLInputElement).files;
+      newValue = files ? files[0] : null; // Get the first file if available
+    }
 
     setFormData({
       ...formData,
@@ -29,6 +34,7 @@ export default function Service() {
     // Handle form submission, such as sending data to an API
     console.log(formData);
   };
+  
   return (
     <section className="bg-[#f4f4f4] py-24 mx-8 rounded-ee-[40px] rounded-ss-[40px]">
       <div className="container w-10/12 mx-auto px-8">
