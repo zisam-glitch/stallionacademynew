@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className=" bg-white py-[100px]   mt-[850px]">
+    <section className=" bg-white py-[100px] mt-[650px]  md:mt-[850px]">
       <div className="container text-black  mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2">
         <div>
           <h2 className="  font-light md:text-7xl text-3xl md:pb-0 pb-10 capitalize">
