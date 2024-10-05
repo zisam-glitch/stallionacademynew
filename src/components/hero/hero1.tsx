@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <>
+    <section>
       <div className="fixed mb-[300px] top-0 -z-10 w-full h-[750px] bg-cover bg-center">
         {/* Background Video */}
         <video
@@ -30,6 +30,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

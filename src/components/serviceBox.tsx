@@ -1,7 +1,7 @@
 export default function Service() {
   return (
     <section className=" bg-white py-[100px]">
-      <div className="container   mx-auto px-4 md:px-8">
+      <div className="container text-black  mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center pb-14">
           <h2 className="font-mono font-light text-xl capitalize">
             What You Get
@@ -88,7 +88,7 @@ export default function Service() {
         </div>
         <a
             href="#"
-            className="bg-[#171721] mt-14 md:hidden w-[300px] flex justify-center    font-mono text-white py-[15px] px-[18px] rounded-[50px] hover:underline"
+            className="bg-[#171721] mt-14 md:hidden w-full md:w-[300px] flex justify-center    font-mono text-white py-[15px] px-[18px] rounded-[50px] hover:underline"
           >
             <div className="flex gap-4 items-center justify-center">
               <p>View Our Course Programme </p>
