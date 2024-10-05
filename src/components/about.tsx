@@ -3,13 +3,13 @@ export default function Hero() {
     <section className=" bg-white py-[100px]  mt-[600px] md:mt-[850px]">
       <div className="container  mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2">
         <div className="md:pb-0 pb-10">
-          <h2 className="font-mono font-light text-xl capitalize">
+          <h2 className="font-mono text-black font-light text-xl capitalize">
             What We Do
           </h2>
         </div>
         <div>
-          <h1 className="text-5xl ">Excellence in Dental Training</h1>
-          <p className="py-7 text-lg pr-0 md:pr-[80px]">
+          <h1 className="text-5xl  text-black ">Excellence in Dental Training</h1>
+          <p className="py-7  text-black text-lg pr-0 md:pr-[80px]">
             Stallion Academy: Elevating dental professionals through
             comprehensive courses and continuous learning. Unlock your potential
             for success in dentistry. Elevating dental professionals through

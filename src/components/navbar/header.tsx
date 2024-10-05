@@ -34,7 +34,7 @@ export default function Header() {
   }, []);
 
   return (
-    <>
+    <section>
       {/* Light Header (Non-Sticky) */}
       <header className="main-tool-bar  w-full bg-transparent text-white">
         {/* <Topbar /> */}
@@ -133,6 +133,6 @@ export default function Header() {
           </nav>
         </div>
       </header>
-    </>
+    </section>
   );
 }
