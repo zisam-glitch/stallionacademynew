@@ -1,6 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #ffffff;
@@ -17,11 +22,99 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.font-mono {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* .header-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.header-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.header-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header-exit-active {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+} */
+
+/* Overriding FsLightbox background color */
+.fslightbox-container {
+  background-color: white !important;
+}
+
+/* Close button and arrows in black */
+.fslightbox-toolbar-button,
+.fslightbox-slide-btn,
+.fslightbox-slide-btn-container {
+  color: black !important;
+  filter: invert(0) !important;
+}
+
+/* If the arrows are using SVGs or images, this will invert them */
+.fslightbox-slide-btn-container path {
+  stroke: black !important;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -40px; /* Ensure the margin fits the padding */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 40px; /* Creates a gap between columns */
+  background-clip: padding-box;
+}
+
+/* Make the images responsive */
+.my-masonry-grid_column > div {
+  margin-bottom: 40px;
+}
+
+.fslightbox-container {
+  background-color: white !important;
+}
+
+.fslightbox-absoluted {
+  background-color: white !important;
+}
+.fslightbox-slide-btn {
+  background: transparent !important;
+}
+.fslightbox-slide-btn-container path{
+  stroke: transparent !important;
+}
+
+.fslightbox-svg-path{
+  fill: black !important;
+}
+.fslightbox-toolbar{
+  background-color: transparent !important;
+}
+
+.fslightbox-flex-centered span{
+  color: #000 !important;
+}
+
+.fslightbox-slide-number-container .fslightbox-flex-centered span{
+  color:  black !important;
+}
+
+.fslightbox-slide-number-container{
+  color: #000 !important;
 }

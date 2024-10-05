@@ -1,8 +1,8 @@
 import Layout from "@/components/layout/layout";
-import Hero from "@/components/hero/hero1";
-import About from "@/components/about";
-import Service from "@/components/servce";
-import ServiceBox from "@/components/serviceBox";
+import Hero from "@/components/hero/hero2";
+import About from "@/components/about/about";
+import Numbers from "@/components/about/numbers";
+import Ethos from "@/components/about/ethos";
 import Contact from "@/components/contact/contact";
 
 export default function Home() {
@@ -10,8 +10,8 @@ export default function Home() {
     <Layout>
       <Hero />
       <About />
-      <Service />
-      <ServiceBox />
+      <Numbers />
+      <Ethos />
       <Contact />
     </Layout>
   );
