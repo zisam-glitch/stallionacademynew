@@ -36,7 +36,7 @@ const MasonryGallery = () => {
     "https://res.cloudinary.com/db1i46uiv/image/upload/v1727034028/lxmhcikrbqbulgsdimuu.webp",
   ];
 
-  const openLightboxOnSlide = (slideIndex) => {
+  const openLightboxOnSlide = (slideIndex: number) => { // Specify the type here
     setLightboxController({
       toggler: !lightboxController.toggler,
       slide: slideIndex,
@@ -53,7 +53,7 @@ const MasonryGallery = () => {
     <section className='container mx-auto px-8 pb-[100px]'>
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid "
+        className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
         {images.map((image, index) => (
