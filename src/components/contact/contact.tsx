@@ -37,7 +37,7 @@ export default function Service() {
 
   return (
     <section className="bg-[#f4f4f4] py-24 ">
-      <div className="container mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2">
+      <div className="container text-black mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2">
         <div className="pb-14">
           <h2 className="font-mono font-light text-xl capitalize">
             Contact Us
@@ -113,7 +113,7 @@ export default function Service() {
           </p>
           <button
             type="submit"
-            className="bg-[#171721]     font-mono text-white py-[15px] px-[24px] rounded-[50px] hover:underline"
+            className="bg-[#171721] font-mono text-white py-[15px] px-[24px] rounded-[50px] hover:underline"
           >
             <div className="flex gap-4 items-center justify-center">
               <p>Send Message</p>
