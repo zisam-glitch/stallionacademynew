@@ -1,5 +1,5 @@
 import React from "react"; // Import React for JSX typing
-import Header from "../navbar/header";
+import Header from "../navbar";
 import Footer from "../footer";
 
 interface LayoutProps {

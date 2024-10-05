@@ -15,18 +15,18 @@ export default function Header() {
     );
 
     ScrollTrigger.create({
-      start: "50px top", // Changed from 10px to 50px to account for Topbar height
+      start: "0px top", // Changed from 10px to 50px to account for Topbar height
       end: "max",
       onUpdate: (self) => {
         // Scroll down: show dark header
-        if (self.direction === 1 && self.scroll() > 50) {
+        if (self.direction === 1 && self.scroll() > 0) {
           // Scroll past Topbar height
           if (darkHeaderAnim.progress() === 0) {
             darkHeaderAnim.play(); // Show dark header
           }
         }
         // Scroll up: hide dark header when almost reaching the top
-        else if (self.direction === -1 && self.scroll() <= 50) {
+        else if (self.direction === -1 && self.scroll() <= 40) {
           darkHeaderAnim.reverse(); // Hide dark header
         }
       },
