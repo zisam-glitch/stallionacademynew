@@ -12,20 +12,23 @@ export default function Service() {
     file: null,
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value, files } = e.target;
+
+    // Check if the target is an input element and has files
+    const newValue = (e.target as HTMLInputElement).files ? (files as FileList)[0] : value;
+
     setFormData({
       ...formData,
-      [name]: files ? files[0] : value,
+      [name]: newValue,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission, such as sending data to an API
     console.log(formData);
   };
-
   return (
     <section className="bg-[#f4f4f4] py-24 mx-8 rounded-ee-[40px] rounded-ss-[40px]">
       <div className="container w-10/12 mx-auto px-8">
