@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <section>
       <header className="dark-header fixed top-[0px] w-full z-50 border-b-[0.5px] bg-white text-[#171721] transition-all duration-300">
-        <div className="container mx-auto p-8 flex justify-between items-center">
+        <div className="container mx-auto p-4 md:p-8 flex justify-between items-center">
           {/* Logo */}
           <a href="/" className="w-32">
             <img
@@ -21,7 +21,7 @@ export default function Header() {
           </a>
 
           {/* Navigation Links */}
-          <nav className="space-x-10 text-[17px] font-light">
+          <nav className="space-x-10 text-[17px] font-light hidden md:block">
             <a href="/about" className="hover:underline">
               About
             </a>

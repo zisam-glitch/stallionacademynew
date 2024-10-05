@@ -7,18 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -84,7 +72,7 @@ body {
 
 /* Make the images responsive */
 .my-masonry-grid_column > div {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .fslightbox-container {
@@ -118,4 +106,10 @@ body {
 
 .fslightbox-slide-number-container{
   color: #000 !important;
+}
+
+@media (min-width: 768px) {
+  .my-masonry-grid_column > div {
+    margin-bottom: 40px;
+  }
 }

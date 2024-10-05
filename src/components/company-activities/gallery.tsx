@@ -47,10 +47,9 @@ const MasonryGallery = () => {
     default: 3, // 3 columns for large screens
     1100: 2, // 2 columns for medium screens
     700: 1, // 1 column for small screens
-  };
-
+  }
   return (
-    <section className='container mx-auto px-8 pb-[100px]'>
+    <section className='container mx-auto px-4 md:px-8 pb-[100px]'>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
