@@ -31,7 +31,7 @@ const Hamburger = () => {
             </div>
 
             {/* Drawer */}
-            <div className={`fixed top-[84px] h-[calc(100vh-83px)] right-0 w-full bg-white shadow-lg transform transition-transform duration-300 ${isActive ? 'translate-x-0' : 'translate-x-full'}`}>
+            <div className={`fixed top-[83px] h-[calc(100vh-82px)] right-0 w-full bg-white shadow-lg transform transition-transform duration-300 ${isActive ? 'translate-x-0' : 'translate-x-full'}`}>
                 <div className="p-4">
                     <h2 className="text-xl font-semibold">Menu</h2>
                     <ul className="mt-4">
