@@ -36,12 +36,12 @@ export default function Service() {
   };
   
   return (
-    <section className="bg-[#f4f4f4] py-24 mx-8 rounded-ee-[40px] rounded-ss-[40px]">
-      <div className="container w-10/12 mx-auto px-8">
+    <section className="bg-[#f4f4f4] py-12 md:py-24 mx-4 md:mx-8 rounded-ee-[40px] rounded-ss-[40px]">
+      <div className="container w-full md:w-10/12 mx-auto px-10 md:px-8">
         
         <form onSubmit={handleSubmit} className=" font-mono space-y-12">
-          <div className="flex justify-between space-x-10">
-            <div className="w-1/2">
+          <div className="md:flex block justify-between space-x-0 md:space-x-10">
+            <div className="md:w-1/2 w-full pb-12 md:pb-0">
               <input
                 type="text"
                 name="firstName"
@@ -53,7 +53,7 @@ export default function Service() {
                 className="w-full border-b border-b-[#000000] p-2 placeholder:text-lg bg-transparent focus:placeholder:text-black focus:outline-none focus:border-b-1 focus:border-b-black"
               />
             </div>
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <input
                 type="text"
                 name="lastName"
@@ -66,8 +66,8 @@ export default function Service() {
             </div>
           </div>
 
-          <div className="flex justify-between space-x-10">
-            <div className="w-1/2">
+          <div className="md:flex block justify-between space-x-0 md:space-x-10">
+            <div className="md:w-1/2 w-full pb-12 md:pb-0">
               <input
                 type="tel"
                 name="phone"
@@ -80,7 +80,7 @@ export default function Service() {
               />
             </div>
 
-            <div className="w-1/2">
+            <div className="md:w-1/2 w-full">
               <input
                 type="email"
                 name="email"
