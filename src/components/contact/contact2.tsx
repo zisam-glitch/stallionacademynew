@@ -36,7 +36,7 @@ export default function Service() {
   };
   
   return (
-    <section className="bg-[#f4f4f4] py-18 md:py-24 mx-4 md:mx-8 rounded-ee-[40px] rounded-ss-[40px]">
+    <section className="bg-[#f4f4f4] py-16 md:py-24 mx-4 md:mx-8 rounded-ee-[40px] rounded-ss-[40px]">
       <div className="container w-full md:w-10/12 mx-auto px-10 md:px-8">
         
         <form onSubmit={handleSubmit} className=" font-mono space-y-12">
