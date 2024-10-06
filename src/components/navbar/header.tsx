@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import HamburgerMenu from "./mobile";
 export default function Header() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -97,7 +98,7 @@ export default function Header() {
           </a>
 
           {/* Navigation Links */}
-          <nav className="space-x-10 text-[17px] font-light hidden md:block">
+          <nav className="space-x-10 text-[17px] font-light hidden md:block ">
             <a href="/about" className="hover:underline">
               About
             </a>
@@ -131,6 +132,9 @@ export default function Header() {
               </button>{" "}
             </a>
           </nav>
+          <div className="md:hidden block">
+          <HamburgerMenu />
+          </div>
         </div>
       </header>
     </section>
