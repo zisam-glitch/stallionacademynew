@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import HamburgerMenu from "./mobile";
+import HamburgerMenu2 from "./mobile2";
+
 export default function Header() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -82,6 +84,9 @@ export default function Header() {
               </button>{" "}
             </a>
           </nav>
+          <div className="md:hidden block">
+          <HamburgerMenu2 />
+          </div>
         </div>
       </header>
 
