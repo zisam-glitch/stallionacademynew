@@ -11,7 +11,7 @@ export default function Hero() {
           playsInline
         >
           <source
-            src="https://res.cloudinary.com/db1i46uiv/video/upload/v1727901812/Untitled_design_1_vpgs9u.mp4"
+            src="https://res.cloudinary.com/db1i46uiv/video/upload/v1728642209/Untitled_design_2_x6pe44.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
